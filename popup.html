@@ -34,6 +34,7 @@
      box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
      display: none;
      }
+     
     .title{
             width: 600px;
             height: 100px;
@@ -62,15 +63,42 @@
     .tables{
         position: absolute;
         top: 115px;
-        left: 100px;
+        left: 50px;
+        display: grid;
     }
+    .tables{
+        background: conic-gradient(
+            #fd004c,
+            #fe9000,
+            #fff020,
+            #3edf4b
+        );
+        animation: spin 1.5s  linear;
+
+     }
+     @keyframes spin{
+        100%{
+            transform: rotate(360deg);
+            text-shadow: aquamarine;
+        }
+     }
     .tables h2{
         color: #31875f;
     }
     table  , td{
-        border: 1px solid rgba(17, 50, 23, 0.741);
+        border: 1px solid;
+        border-color: conic-gradient(
+            #fd004c,
+            #fe9000,
+            #fff020,
+            #3edf4b
+        );
+        animation: spin 1.5s  linear  ;
         padding: 7px;
         font-weight: bold;
+        letter-spacing: 3px;
+        font-family: 'Times New Roman', Times, serif;
+        
     }
     
     
