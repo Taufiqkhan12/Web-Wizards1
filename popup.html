@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        min-height: 100vh;
+        background-color: #6cb1ff;
+    }
+    
+    .content{
+     position: fixed;
+     top: 30%;
+     left: 30%;
+     transform: translate(-30%, -30%);
+    }
+    .popup{
+     position: fixed;
+     width: 600px;
+     height: 350px;
+     background: beige;
+     border-radius: 20px;
+     display: flex;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+     display: none;
+     }
+    .title{
+            width: 600px;
+            height: 100px;
+            position: fixed;
+            background: gold;
+            padding: 20px;
+            border-radius: 30px;
+            display: block;
+            box-shadow:  0 5px 15px rgb(207, 228, 85);
+    }
+    .close{
+     position: absolute;
+     top: -10px;
+     right: -5px;
+     width: 40px;
+     height: 40px;
+     background: white url(icons8-cancel-48.png);
+     border-radius: 40px;
+     background-repeat: no-repeat;
+     background-size: -4px;
+     background-position: -4px;
+     cursor: pointer;
+    z-index: 10;
+    }   
+    
+    .tables{
+        position: absolute;
+        top: 115px;
+        left: 100px;
+    }
+    .tables h2{
+        color: #31875f;
+    }
+    table  , td{
+        border: 1px solid rgba(17, 50, 23, 0.741);
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="popup">
+            <div class="title">
+                <h2>Experience the Blessings of Ramadan With Memon Travels</h2>
+            </div>
+            <div class="close">
+                
+                
+                
+            </div>
+            <div class="tables">
+                <h2>Ramadan Umrah 2023 (Eid in Madina)</h2>
+                <table>
+                    <tr>
+                        <td>Package</td>
+                        <td>Full Month</td>
+                        <td>20 Days</td>
+                    </tr>
+                    <tr>
+                        <td>Economy</td>
+                        <td>1,35,000</td>
+                        <td>1,20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe</td>
+                        <td>1,95,000</td>
+                        <td>1,75,000</td>
+                    </tr>
+                    <tr>
+                        <td>Super Deluxe</td>
+                        <td>2,25,000</td>
+                        <td>2,00,000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Automatic show popup after 2s of page load-->
+<script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close')
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = 'block';
+        }, 2000)
+    }
+
+    close.addEventListener('click', () => {
+        popup.style.display = 'none';
+    })
+</script>
+</html>
