@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: none;
       }
       body {
         min-height: 100vh;
@@ -55,7 +57,7 @@
         background-repeat: no-repeat;
         background-size: -4px;
         background-position: -4px;
-        cursor: pointer;
+        /* cursor: pointer; */
         z-index: 10;
       }
 
@@ -88,6 +90,7 @@
         letter-spacing: 3px;
         font-family: "Times New Roman", Times, serif;
       }
+     
     </style>
   </head>
   <body>
@@ -124,12 +127,13 @@
         </div>
       </div>
     </div>
-  </body>
+   
   <!--Automatic show popup after 2s of page load-->
   <script>
     const popup = document.querySelector(".popup");
     const close = document.querySelector(".close");
     const body = document.querySelector("body");
+  
     window.onload = function () {
       setTimeout(function () {
         popup.style.display = "block";
@@ -142,5 +146,7 @@
     body.addEventListener("click", () => {
       popup.style.display = "none";
     });
+
+   
   </script>
 </html>
