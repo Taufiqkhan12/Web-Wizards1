@@ -5,7 +5,7 @@ window.addEventListener("mousemove", (e) => {
   let x = e.pageX;
   let y = e.pageY;
 
-  cursor.forEach((el) => {
+  cursor.forEach(function (el) {
     el.style.left = `${x}px`;
     el.style.top = `${y}px`;
 
