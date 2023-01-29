@@ -1,0 +1,178 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #12c2e9,#c471ed, #f64f59);
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 50px rgba(255, 255, 255, 0.2); */
+    padding: 40px;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ffff;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #ffff;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #ffff;
+    pointer-events: none;
+}
+
+.input-group input {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffff;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -2px;
+    transition: 0.5s;
+}
+
+.eye {
+    position: absolute;
+    cursor: pointer;
+    margin: 11px 0;
+    font-size: 15px;
+    color: #ffff;
+}
+
+.eye:hover {
+    color: #ff004c;
+    transition: .2s;
+}
+
+#open-eye {
+    display: none;
+}
+
+#close-eye {
+    /* display: none; */
+}
+
+.checkbox {
+    margin: -5px 0 15px 5px;
+}
+
+.checkbox label {
+    color: #ffff;
+    font-size: 15px;
+}
+
+.checkbox label input {
+    accent-color: #ff004c;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #ff004c;
+    font-size: 16px;
+    color: #ffff;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background: #da0041;
+    transition: 0.3s;
+}
+
+.signUp-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signUp-link p {
+    color: #ffff;
+}
+
+.signUp-link p a {
+    color: #ff004c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signUp-link p a:hover {
+    text-decoration: underline;
+}
+
+.social-platform {
+    font-size: 15px;
+    color: #ffff;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    background: transparent;
+    text-align: center;
+    line-height: 35px;
+    margin: 15px 6px 0;kt
+}
+
+.social-icons a:hover {
+    background-color: #ff004c;
+    transition: 0.3s;
+    /* border: none; */
+    transform: scale(1.1);
+    outline: none;
+}
+
+.social-icons a i {
+    color: #ffff;
+    font-size: 15px;
+}
